@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				changeset pattern: "*.js"
+				changeset pattern: "*.js", caseSensitive: true
 			}
 		
             steps {                
